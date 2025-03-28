@@ -15,34 +15,36 @@ document.addEventListener("DOMContentLoaded", async function () {
         return;
     }
 
-    async function fetchSearchResults(query, type) {
-        let url = "https://google.serper.dev/search";
-        let postData = { q: query, num: 20 };
+async function fetchSearchResults(query, type) {
+    let url = "https://google.serper.dev/search";
+    let postData = { q: query, num: 20 }; // Ensure num is included
 
-        if (type === "images") {
-            url = "https://google.serper.dev/images";
-        }
-
-        try {
-            resultsContainer.innerHTML = "<p>Fetching Results...</p>"; // Loading indicator
-            const response = await fetch(url, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "X-API-KEY": SERPER_API_KEY,
-                },
-                body: JSON.stringify(postData),
-            });
-
-            if (!response.ok) throw new Error("Failed to fetch results");
-
-            const data = await response.json();
-            displayResults(data, type);
-        } catch (error) {
-            console.error("Error fetching search results:", error);
-            resultsContainer.innerHTML = `<h1>Error loading results.</h1><p>Failed to load results. Check API key.</p>`;
-        }
+    if (type === "images") {
+        url = "https://google.serper.dev/images";
+        postData = { q: query, num: 20 }; // Make sure images request 20 results too
     }
+
+    try {
+        resultsContainer.innerHTML = "<p>Fetching Results...</p>"; // Loading indicator
+        const response = await fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "X-API-KEY": SERPER_API_KEY,
+            },
+            body: JSON.stringify(postData),
+        });
+
+        if (!response.ok) throw new Error("Failed to fetch results");
+
+        const data = await response.json();
+        displayResults(data, type);
+    } catch (error) {
+        console.error("Error fetching search results:", error);
+        resultsContainer.innerHTML = `<h1>Error loading results.</h1><p>Failed to load results. Check API key.</p>`;
+    }
+}
+
 
     function displayResults(data, type) {
         resultsContainer.innerHTML = ""; // Clear results

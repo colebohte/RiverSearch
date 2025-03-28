@@ -17,14 +17,14 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     async function fetchSearchResults(query, type) {
         let url = "https://google.serper.dev/search";
-        let postData = { q: query };
+        let postData = { q: query, num: 20 };
 
         if (type === "images") {
             url = "https://google.serper.dev/images";
         }
 
         try {
-            resultsContainer.innerHTML = "<p>Loading...</p>"; // Loading indicator
+            resultsContainer.innerHTML = "<p>Fetching Results...</p>"; // Loading indicator
             const response = await fetch(url, {
                 method: "POST",
                 headers: {

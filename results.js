@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 async function fetchSearchResults(query, type) {
     let url = "https://google.serper.dev/search";
-    let postData = { q: query, num: 20 }; // Ensure num is included
+    let postData = { q: query, num: 20 };
 
     if (type === "images") {
         url = "https://google.serper.dev/images";
-        postData = { q: query, num: 20 }; // Make sure images request 20 results too
+        postData = { q: query, num: 20 };
     }
 
     try {
@@ -38,6 +38,8 @@ async function fetchSearchResults(query, type) {
         if (!response.ok) throw new Error("Failed to fetch results");
 
         const data = await response.json();
+        console.log("API Response:", data); // Log response to debug
+
         displayResults(data, type);
     } catch (error) {
         console.error("Error fetching search results:", error);

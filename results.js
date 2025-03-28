@@ -39,6 +39,7 @@ async function fetchSearchResults(query, type) {
 
         const data = await response.json();
         console.log("API Response:", data); // Log response to debug
+        console.log("Images Data:", data);
 
         displayResults(data, type);
     } catch (error) {

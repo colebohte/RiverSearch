@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     const resultsContainer = document.querySelector(".results-container");
     const searchTabButton = document.querySelector(".searchtab");
     const imageTabButton = document.querySelector(".imagetab");
-    const SERPER_API_KEY = "cc2470781e50b266d2669378784e6af12e925730"; // Serper API Key
+    const SERPER_API_KEY = "cc2470781e50b266d2669378784e6af12e925730"; // Serper API Key, Please provide your own API key
 
     let searchType = "web"; // Default search type
 

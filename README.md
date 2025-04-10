@@ -8,3 +8,7 @@ River Search includes:
 * Minimalistic Home-page
 * Semi-working Image search
 * AI Overview (Based on DuckAI, Coming Soon)
+* Anonymous browsing features
+* Detailed client-side output logs
+
+## How to set up your own search engine

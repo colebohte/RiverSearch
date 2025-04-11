@@ -30,6 +30,14 @@ body {
     height: 100vh; /* Full viewport height */
 }
 
+body {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Removes default margin */
+    font-family: "Poppins"
+}
+
 button {
     background: rgba(255, 255, 255, 0.15);
     border-radius: 16px;
@@ -88,6 +96,9 @@ textarea:hover {
     color: rgba(255, 255, 255, 0.5);
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0);
 }
+
+
+
 
 .results-container {
   width: 90%; /* Adjust width */

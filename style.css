@@ -1,146 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .bottom-div {
-    position: fixed;
-    bottom: 0;
-    width: 100%; /* Optional: Make it span the whole width */
-    text-align: center; /* Optional: Center the text */
-    background-color: #f0f0f0; /* Optional: Add a background color for visibility */
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Optional: Make it span the whole width */
+    text-align: center; /* Optional: Center the text */
+    background-color: #f0f0f0; /* Optional: Add a background color for visibility */
 }
 
 body {
-    background-color: #0078CE;
-    background-image: url(bg.jpg);
-    background-size: cauto;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    margin: 0;
-    color: white;
-    font-family: "Poppins";
+    background-color: #0078CE;
+    background-image: url(bg.jpg);
+    background-size: cauto;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+    font-family: "Poppins";
 }
 
 .logo {
-    display: inline-flex;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Centers vertically */
-    align-items: center; /* Center them horizontally */
-    flex-direction: column; /* Stack elements vertically */
-    gap: 15px; /* Adds space between the elements */
-    height: 100vh; /* Full viewport height */
-}
-
-body {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    height: 100vh; /* Full height of the viewport */
-    margin: 0; /* Removes default margin */
-    font-family: "Poppins"
+    display: inline-flex;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Centers vertically */
+    align-items: center; /* Center them horizontally */
+    flex-direction: column; /* Stack elements vertically */
+    gap: 15px; /* Adds space between the elements */
+    height: 100vh; /* Full viewport height */
 }
 
 button {
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 50px;
-    padding-left: 50px;
-    color: white;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.125);
-    font-family: "Poppins";
-    font-size: 16px;
-    transition-duration: 0.25s;
-    margin-left: 10px;
-    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: white;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.125);
+    font-family: "Poppins";
+    font-size: 16px;
+    transition-duration: 0.25s;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 button:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transition-duration: 0.25s;
+    background: rgba(255, 255, 255, 0.25);
+    transition-duration: 0.25s;
 }
 
 textarea {
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 50px;
-    padding-left: 50px;
-    color: white;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    font-family: "Poppins";
-    font-size: 16px;
-    resize: none;
-    height: 25px;
-    width: 35%;
-    outline: none;
-    transition-duration: 0.25s;
-    margin-left: 10px;
-    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: white;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    font-family: "Poppins";
+    font-size: 16px;
+    resize: none;
+    height: 25px;
+    width: 35%;
+    outline: none;
+    transition-duration: 0.25s;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 textarea:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transition-duration: 0.25s;
+    background: rgba(255, 255, 255, 0.25);
+    transition-duration: 0.25s;
 }
 
 ::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0);
 }
 
-
-
-
 .results-container {
-  width: 90%; /* Adjust width */
-  max-width: 1200px; /* Set a max width */
-  margin: 20px auto;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 16px;
-  backdrop-filter: blur(20px);
-  color: white;
-  overflow-x: hidden; /* Prevent horizontal overflow */
-  word-wrap: break-word; /* Ensures long text doesn't overflow */
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  width: 90%; /* Adjust width */
+  max-width: 1200px; /* Set a max width */
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  color: white;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  word-wrap: break-word; /* Ensures long text doesn't overflow */
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .result-item {
-  backdrop-filter: blur(20px);
-  border-radius: 12px;
-  margin-bottom: 15px;
-  padding: 10px;
-  overflow-wrap: break-word; /* Ensures long links don't break layout */
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  margin-bottom: 15px;
+  padding: 10px;
+  overflow-wrap: break-word; /* Ensures long links don't break layout */
 }
 
 h3 a {
-  display: block; /* Ensures the link doesn't overflow */
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  display: block; /* Ensures the link doesn't overflow */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 body {
-  overflow-x: hidden; /* Prevents entire page from scrolling sideways */
+  overflow-x: hidden; /* Prevents entire page from scrolling sideways */
 }
 
 a {
-  color: white;
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  font-family: "Poppins";
+  color: white;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins";
 }
 
 .container {
-  min-width: 100vw;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Centers vertically */
-  align-items: center; /* Center them horizontally */
+  min-width: 100vw;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Centers vertically */
+  align-items: center; /* Center them horizontally */
 }
